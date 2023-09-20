@@ -1,0 +1,81 @@
+* {
+    font-family: sans-serif;
+}
+
+/* delete_Bookings style */
+.fathContainer{
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 5px;
+    background-image: url('/static/pexels-tirachard-kumtanom-601169.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    position: relative;
+    height: 100vh;
+}
+.idField{
+    font-family: sans-serif;
+}
+input[type="submit"] {
+    margin-top: 10px;
+}
+.ltext {
+    color: black;
+    font-weight: bold; 
+    font-size: 16px; 
+}
+
+/* index */
+.ifathContainer{
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 5px;
+    background-image: url('/static/pexels-tirachard-kumtanom-601169.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    position: relative;
+    height: 100vh;
+}
+.ifathContainer ul li a {
+    color: black;
+    font-weight: bold; 
+    font-size: 16px; 
+}
+
+.afathContainer, .aformContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+/* add booking */
+#bBtn{
+    margin-top: 10px;
+}
+.aFatherContainer{
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 5px;
+    background-image: url('/static/pexels-tirachard-kumtanom-601169.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    position: relative;
+    height: 100vh;
+}
+.label-style {
+    font-weight: bold; 
+    font-size: 16px; 
+}
