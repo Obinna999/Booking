@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
+    {% include 'navbar.html' %}
     <div class="aFatherContainer">
         <div class="aformContainer">
         <form method="POST">
@@ -33,7 +34,6 @@
                 </div>
             </div>
             {{ form.submit(class="btn btn-primary") }}
-            <a id="bBtn" class="btn btn-danger" href="{{ url_for('home') }}" role="button">Back</a> 
         </form>
 
         </div>

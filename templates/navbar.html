@@ -1,0 +1,14 @@
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="{{url_for('index')}}" role="button">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('bookings') }}">Check Bookings</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('addBooking') }}">Book</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('delete_Bookings') }}">Delete</a>
+      </li>
+  </ul>

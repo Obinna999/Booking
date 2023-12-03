@@ -27,24 +27,24 @@ class RegistrationForm(FlaskForm):
 
 
 
-@app.route('/')
-def home():
+@app.route('/', methods=['GET'])
+def index():
     return render_template('index.html')
 
 
 
-@app.route('/Bookings')
-def view_bookings():
+@app.route('/bookings', methods=['GET'])
+def bookings():
     try:
         dbCursor.execute("SELECT * FROM guests")
         bookings = dbCursor.fetchall()
-        return render_template('Bookings.html', bookings=bookings)
+        return render_template('bookings.html', bookings=bookings)
     except sqlite3.Error as e:
         return f"Error: {str(e)}"
 
 
 
-@app.route('/add_Bookings', methods=['GET', 'POST'] )
+@app.route('/addBooking', methods=['GET', 'POST'] )
 def addBooking():
     form = RegistrationForm()
     if form.validate_on_submit():
@@ -78,7 +78,7 @@ def addBooking():
 
 
 @app.route('/delete_Bookings', methods=['GET', 'POST'])
-def delete():
+def delete_Bookings():
     if request.method == 'POST':
         idField = request.form.get('idField')
         if idField is not None:
