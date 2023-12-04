@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, validators
 from datetime import datetime
+
 import sqlite3
 import secrets
 
@@ -70,7 +71,8 @@ def addBooking():
             return f"{name}, your booking has been accepted!"
         except (sqlite3.Error, ValueError) as e:
             dbCon.rollback()
-            return f"Can't book: {str(e)}. Try changing your booking."
+            app.logger.error(f"Error during booking: {str(e)}")
+            return "An error occurred during booking. Please try again."
 
     return render_template('add_Bookings.html', form=form)
 

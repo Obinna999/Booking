@@ -9,7 +9,8 @@
 </head>
 <body>
     {% include 'navbar.html' %}
-        <img src="/static/pexels-tirachard-kumtanom-601169.jpg" class="card-img-top" alt="...">
+    <div class="container">
+        <img src="/static/pexels-tirachard-kumtanom-601169.jpg" class="card-img-top img-fluid"  alt="...">
         <form class="row g-3" method="post" action="/delete_Bookings" id="dCard">
             <h1>Delete Booking</h1>
             <div class="col-auto">
@@ -24,5 +25,6 @@
               <button type="submit" class="btn btn-primary mb-3">Delete</button>
             </div>
           </form>
+        </div>
 </body>
 </html>
